@@ -1,6 +1,15 @@
 # امتحان الوحدة 1 · نتاج التعلم ب
 
-50 سؤال اختيار من متعدد. الطالبة ترى **نتيجتها فقط**، وجميع النتائج تُرسَل إلى Google Sheet للمعلمة.
+60 سؤال اختيار من متعدد. الطالبة ترى **نتيجتها فقط**، وجميع النتائج تُرسَل إلى Google Sheet للمعلمة.
+
+## الروابط
+
+| الغرض | الرابط |
+| --- | --- |
+| صفحة الامتحان للطالبات | https://sanaaalbanna8-sudo.github.io/unit1-aim-b-exam/ |
+| مستودع GitHub | https://github.com/sanaaalbanna8-sudo/unit1-aim-b-exam |
+| جدول النتائج (للمعلمة) | https://docs.google.com/spreadsheets/d/1QueQEmLPJr0TpRDIq-eMyvWsAdnvV7145Gk-X6FeYCg/edit |
+| رابط حفظ النتائج (Web App) | يُضبط في `config.js` → `SHEET_URL` |
 
 ## ربط Google Sheet
 
@@ -11,11 +20,8 @@
 5. **Deploy → New deployment → Web app**
    - Execute as: **Me**
    - Who has access: **Anyone**
-6. انسخي رابط Web app وضعيه في `config.js` داخل `SHEET_URL`.
+6. انسخي رابط Web app وضعيه في `config.js` داخل `SHEET_URL` ثم ارفعي التحديث إلى GitHub.
 
-رابط الجدول:
-https://docs.google.com/spreadsheets/d/1QueQEmLPJr0TpRDIq-eMyvWsAdnvV7145Gk-X6FeYCg/edit
+## التشغيل المحلي
 
-## التشغيل
-
-افتحي `index.html` في المتصفح، أو ارفعي المجلد على أي استضافة ثابتة (GitHub Pages).
+افتحي `index.html` في المتصفح.

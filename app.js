@@ -181,6 +181,8 @@
     state.finishedAt = new Date();
     els.progressFill.style.width = "100%";
     els.finalScore.textContent = String(state.correct);
+    const outOf = document.getElementById("scoreOutOf");
+    if (outOf) outOf.textContent = `/ ${total}`;
     els.resultTitle.textContent = `نتيجتك يا ${state.name}`;
     els.resultMsg.textContent = gradeMessage(state.correct, total);
     els.reviewList.hidden = true;

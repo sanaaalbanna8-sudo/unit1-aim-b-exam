@@ -15,7 +15,7 @@
       <div class="card start-card">
         <p class="kicker">الوحدة 1 · أنظمة تكنولوجيا المعلومات · نتاج التعلم ب</p>
         <h1>امتحان اختيار من متعدد</h1>
-        <p class="lead">50 سؤالًا عن المصطلحات والتمييز بينها. بعد كل اختيار تظهر الإجابة الصحيحة فورًا.</p>
+        <p class="lead">60 سؤالًا عن المصطلحات والتمييز بينها. بعد كل اختيار تظهر الإجابة الصحيحة فورًا.</p>
         <label class="field">
           <span>اسم الطالبة / الطالب</span>
           <input type="text" id="studentName" placeholder="اكتبي الاسم هنا" autocomplete="name" maxlength="80">
@@ -33,7 +33,7 @@
       <header class="quiz-bar">
         <div>
           <strong id="studentLabel"></strong>
-          <span id="progressLabel">سؤال 1 من 50</span>
+          <span id="progressLabel">سؤال 1 من 60</span>
         </div>
         <div class="score-live">صحّحتِ: <b id="liveCorrect">0</b></div>
       </header>
@@ -54,7 +54,7 @@
       <div class="card result-card">
         <p class="kicker">انتهى الامتحان</p>
         <h1 id="resultTitle">نتيجتك</h1>
-        <p class="score-big"><span id="finalScore">0</span><small>/ 50</small></p>
+        <p class="score-big"><span id="finalScore">0</span><small id="scoreOutOf">/ 60</small></p>
         <p class="lead" id="resultMsg"></p>
         <p class="send-status" id="sendStatus">جاري إرسال نتيجتك للمعلمة…</p>
         <div class="result-actions">

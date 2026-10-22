@@ -70,7 +70,7 @@ function ensureHeaders_() {
 }
 
 function appendResult_(body) {
-  var total = Number(body.total) || 50;
+  var total = Number(body.total) || 60;
   var score = Number(body.score) || 0;
   var pct = total ? Math.round((score / total) * 100) : 0;
   var detail = (body.answers || []).map(function (a, i) {
