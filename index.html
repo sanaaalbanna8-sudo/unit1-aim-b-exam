@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>امتحان الوحدة 1 · نتاج ب | البيانات والمعلومات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <section class="screen on" id="screen-start">
+      <div class="card start-card">
+        <p class="kicker">الوحدة 1 · أنظمة تكنولوجيا المعلومات · نتاج التعلم ب</p>
+        <h1>امتحان اختيار من متعدد</h1>
+        <p class="lead">50 سؤالًا عن المصطلحات والتمييز بينها. بعد كل اختيار تظهر الإجابة الصحيحة فورًا.</p>
+        <label class="field">
+          <span>اسم الطالبة / الطالب</span>
+          <input type="text" id="studentName" placeholder="اكتبي الاسم هنا" autocomplete="name" maxlength="80">
+        </label>
+        <label class="field">
+          <span>الشعبة / المجموعة (اختياري)</span>
+          <input type="text" id="studentClass" placeholder="مثال: 3A" maxlength="40">
+        </label>
+        <button type="button" class="btn primary" id="btnStart">بدء الامتحان</button>
+        <p class="hint">في النهاية تشوفين نتيجتك فقط. نتائج الجميع تُرسَل للمعلمة.</p>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-quiz">
+      <header class="quiz-bar">
+        <div>
+          <strong id="studentLabel"></strong>
+          <span id="progressLabel">سؤال 1 من 50</span>
+        </div>
+        <div class="score-live">صحّحتِ: <b id="liveCorrect">0</b></div>
+      </header>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+      <article class="card q-card">
+        <p class="q-num" id="qNum">السؤال 1</p>
+        <h2 id="qText"></h2>
+        <div class="choices" id="choices" role="listbox" aria-label="الخيارات"></div>
+        <div class="feedback" id="feedback" hidden></div>
+        <div class="q-actions">
+          <button type="button" class="btn" id="btnNext" disabled>السؤال التالي</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="screen" id="screen-result">
+      <div class="card result-card">
+        <p class="kicker">انتهى الامتحان</p>
+        <h1 id="resultTitle">نتيجتك</h1>
+        <p class="score-big"><span id="finalScore">0</span><small>/ 50</small></p>
+        <p class="lead" id="resultMsg"></p>
+        <p class="send-status" id="sendStatus">جاري إرسال نتيجتك للمعلمة…</p>
+        <div class="result-actions">
+          <button type="button" class="btn" id="btnReview">مراجعة إجاباتك</button>
+          <button type="button" class="btn ghost" id="btnRestart">إعادة الامتحان</button>
+        </div>
+        <div class="review" id="reviewList" hidden></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
